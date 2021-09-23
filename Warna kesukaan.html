@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color chooser</title>
+</head>
+<style>
+    .Kalimat-Atas {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin: auto;
+        color: black;
+    }
+
+    p {
+        color: wheat;
+        margin: auto;
+    }
+
+    .merah {
+        background-color: rgb(209, 40, 40);
+        /* Merah */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-color: black;
+        margin: auto;
+    }
+
+    .Hijau {
+        background-color: rgb(15, 219, 15);
+        /* Hijau */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-color: black;
+        margin: auto;
+    }
+
+    .Biru {
+        background-color: rgb(43, 180, 214);
+        /* Biru */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-color: black;
+        margin: auto;
+    }
+
+    .ungu {
+        background-color: rgb(153, 53, 153);
+        /* ungu */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-color: black;
+        margin: auto;
+    }
+
+    .kuning {
+        background-color: rgb(202, 202, 39);
+        /* Kuning */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-color: black;
+        margin: auto;
+    }
+
+    .putih {
+        background-color: grey;
+        /* Abu abu */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-color: black;
+    }
+
+    .kotak {
+        width: 320px;
+        padding: 10px;
+        border: 5px solid rgb(208, 185, 245);
+        margin: auto;
+        background-color: coral;
+        margin-top: 50px;
+    }
+
+    .Kotak-putih {
+        text-align: center;
+    }
+</style>
+
+<body id="Background">
+    <p></p>
+    <p></p>
+    <h1 id="demo" class="Kalimat-Atas">Pilih warna kesukaan kalian untuk mengubah Background</h1>
+
+    <div class="kotak">
+        <button type="button" onclick="merah()" class="merah">Merah</button>
+        <button type="button" onclick="Hijau()" class="Hijau">Hijau</button>
+        <button type="button" onclick="Biru()" class="Biru">Biru</button>
+        <button type="button" onclick="purple()" class="ungu">Ungu</button>
+        <button type="button" onclick="Kuning()" class="kuning">Kuning</button>
+    </div>
+
+    <!--Untuk mengubah warna latar belkakang menjadi warna semula-->
+    <div class="Kotak-putih">
+        <button type="button" class="putih" onclick="putih()">clear</button>
+    </div>
+    <!--Untuk mengubah warna latar belkakang menjadi warna semula-->
+</body>
+<script>
+    //Untuk konsol//
+    console.info("Project tentang mengubah warna ini project keren");
+    console.warn("Peringatan!!!!")
+    console.error("Jangan hack website ini")
+    //Untuk konsol//
+
+    function merah() {
+        document.getElementById("Background").style.background = "red";
+        document.getElementById("demo").style.color = "rgb(214, 214, 214)";
+    }
+
+    function Hijau() {
+        document.getElementById("Background").style.background = "green";
+        document.getElementById("demo").style.color = "rgb(214, 214, 214)";
+    }
+
+    function Biru() {
+        document.getElementById("Background").style.background = "blue";
+        document.getElementById("demo").style.color = "rgb(214, 214, 214)";
+    }
+
+    function purple() {
+        document.getElementById("Background").style.background = "purple";
+        document.getElementById("demo").style.color = "rgb(214, 214, 214)";
+    }
+
+    function Kuning() {
+        document.getElementById("Background").style.background = "yellow";
+        document.getElementById("demo").style.color = "rgb(214, 214, 214)";
+    }
+
+    //Untuk membuat background halaman menjadi putih
+    function putih() {
+        document.getElementById("Background").style.background = "white";
+        document.getElementById("demo").style.color = "black";
+    }
+   //Untuk membuat background halaman menjadi putih
+</script>
+
+</html>
